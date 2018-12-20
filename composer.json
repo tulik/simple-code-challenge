@@ -45,6 +45,14 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
+        ],
+        "phpstan": "./vendor/bin/phpstan  analyse src tests -l 7",
+        "code-style": "./vendor/bin/php-cs-fixer fix",
+        "phpunit": "./bin/phpunit",
+        "check-code" : [
+            "@code-style",
+            "@phpstan",
+            "@phpunit"
         ]
     },
     "conflict": {
