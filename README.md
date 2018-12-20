@@ -19,10 +19,10 @@ composer install
 Test code:
 
 ```
-compooser code-check
+compooser check-code
 ```
 
-Run as web service:
+Run as web service
 
 ```
 php -S 127.0.0.1:8000 -t public
