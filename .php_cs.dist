@@ -1,0 +1,25 @@
+<?php
+
+declare(strict_types=1);
+
+if (!file_exists(__DIR__.'/src')) {
+    exit(0);
+}
+return PhpCsFixer\Config::create()
+    ->setRiskyAllowed(true)
+    ->setRules(
+        [
+            '@Symfony' => true,
+            '@Symfony:risky' => true,
+            '@PHP71Migration' => true,
+            'array_syntax' => ['syntax' => 'short'],
+            'phpdoc_order' => true,
+            'declare_strict_types' => true,
+            'psr4' => true,
+        ]
+    )
+    ->setFinder(
+        PhpCsFixer\Finder::create()
+            ->in(__DIR__.'/src')
+            ->in(__DIR__.'/tests')
+    );
