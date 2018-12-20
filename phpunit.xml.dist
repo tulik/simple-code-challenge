@@ -28,4 +28,9 @@
     <listeners>
         <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
     </listeners>
+    <logging>
+        <log type="coverage-html" target="tests/coverage" charset="UTF-8" yui="true" highlight="true"/>
+        <log type="coverage-clover" target="var/logs/clover.xml"/>
+    </logging>
+
 </phpunit>
