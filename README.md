@@ -1,5 +1,8 @@
 # Simple Code Challenge
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/tulik/simple-code-challenge/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/tulik/simple-code-challenge/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/tulik/simple-code-challenge/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/tulik/simple-code-challenge/?branch=master)
+
 ## Quick start
 
 Clone the repository
