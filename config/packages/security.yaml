@@ -1,0 +1,15 @@
+security:
+    providers:
+        api_key_user_provider:
+            id: App\Security\ApiKeyUserProvider
+
+    firewalls:
+        main:
+            pattern: ^/v1
+            stateless: true
+            simple_preauth:
+                authenticator: App\Security\ApiKeyAuthenticator
+            provider: api_key_user_provider
+
+    access_control:
+        - { path: ^/v1, roles: ROLE_API }
