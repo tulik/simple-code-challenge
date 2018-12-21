@@ -32,7 +32,12 @@ abstract class AbstractWebTestCase extends WebTestCase
     {
         parent::__construct($name, $data, $dataName);
 
-        $this->client = static::createClient();
+        $this->client = static::createClient(
+            [],
+            ['HTTP_API_KEY' => 'foo',
+            ]
+        );
+
         $this->faker = Factory::create();
     }
 }
