@@ -13,7 +13,7 @@ variables:
   phpVersion: 7.2
 
 steps:
-- script: |
+- script:
     sudo update-alternatives --set php /usr/bin/php$(phpVersion)
   displayName: 'Use PHP version $(phpVersion)'
 
